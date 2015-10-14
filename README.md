@@ -12,9 +12,9 @@ npm install --save postcss-select
 
 ```javascript
 var postcss = require('postcss')
-var postcssSelect = require('postcss-select')
+var select = require('postcss-select')
 
-postcss([ postcssSelect(['.foo', '.bar']) ]).process(myCss).css
+postcss([ select(['.foo', '.bar']) ]).process(myCss).css
 ```
 
 #### Input
@@ -28,6 +28,10 @@ postcss([ postcssSelect(['.foo', '.bar']) ]).process(myCss).css
   color: hotpink;
 }
 
+.foo .baz {
+  color: purple;
+}
+
 .baz {
   color: red;
 }
@@ -35,7 +39,7 @@ postcss([ postcssSelect(['.foo', '.bar']) ]).process(myCss).css
 
 #### Output
 
-After `postcss([postcssSelect(['.foo', '.bar'])`
+After `postcss([select(['.foo', '.bar'])`
 
 ```css
 .foo {
@@ -44,6 +48,10 @@ After `postcss([postcssSelect(['.foo', '.bar'])`
 
 .bar {
   color: hotpink;
+}
+
+.foo .baz {
+  color: purple;
 }
 ```
 
