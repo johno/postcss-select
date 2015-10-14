@@ -1,0 +1,22 @@
+input {
+  color: blue;
+}
+
+.input {
+  color: purple;
+}
+
+.bar .foo input {
+  color: green;
+}
+
+input[type="text"],
+input[type="email"] {
+  color: tomato;
+}
+
+#foo.bar.baz,
+#hello #foo.bar.baz,
+#foo.baz.bar {
+  color: hotpink;
+}
