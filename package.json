@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/johnotander/postcss-select",
   "dependencies": {
+    "is-blank": "^1.0.0",
     "is-css-root": "^1.0.0",
     "postcss": "^5.0.9"
   },
