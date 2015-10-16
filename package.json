@@ -2,7 +2,7 @@
   "name": "postcss-select",
   "description": "Filter CSS based on a given list of selectors",
   "author": "John Otander",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "directories": {
     "test": "test"
