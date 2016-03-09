@@ -20,9 +20,11 @@ function fixture (name) {
 }
 
 function testFixture (t, input, output) {
+  var selectResult = postcss([ select(['.input', '.foo input', 'input[type="text"]', '#foo.bar.baz']) ])
+      .process(fixture(input)).css
+
   t.equal(
-    postcss([ select(['.input', '.foo input', '[type="text"]', '#foo.bar.baz']) ])
-      .process(fixture(input)).css,
+    selectResult,
     fixture(output)
   )
 }

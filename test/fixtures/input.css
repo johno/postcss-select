@@ -6,6 +6,10 @@ input {
   color: purple;
 }
 
+.input-prefix {
+  color: red;
+}
+
 .bar .foo input {
   color: green;
 }

@@ -31,6 +31,6 @@ module.exports = postcss.plugin('postcss-select', function (selectors) {
 
 function hasSelector(selectors, potentialMatch) {
   return selectors.some(function (selector) {
-    return potentialMatch.indexOf(selector) !== -1
+    return potentialMatch === selector
   })
 }

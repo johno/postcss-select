@@ -49,10 +49,6 @@ After `postcss([select(['.foo', '.bar'])`
 .bar {
   color: hotpink;
 }
-
-.foo .baz {
-  color: purple;
-}
 ```
 
 ## License

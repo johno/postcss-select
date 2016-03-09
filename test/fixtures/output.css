@@ -2,15 +2,10 @@
   color: purple;
 }
 
-.bar .foo input {
-  color: green;
-}
-
 input[type="text"] {
   color: tomato;
 }
 
-#foo.bar.baz,
-#hello #foo.bar.baz {
+#foo.bar.baz {
   color: hotpink;
 }
