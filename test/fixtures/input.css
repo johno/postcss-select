@@ -6,6 +6,10 @@ input {
   color: purple;
 }
 
+
+.cf { clear: both; }
+.cf::after { background-color: purple; }
+
 .input-prefix {
   color: red;
 }

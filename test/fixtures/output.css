@@ -2,6 +2,10 @@
   color: purple;
 }
 
+
+.cf { clear: both; }
+.cf::after { background-color: purple; }
+
 input[type="text"] {
   color: tomato;
 }

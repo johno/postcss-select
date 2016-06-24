@@ -3,6 +3,8 @@
 var postcss = require('postcss')
 var isBlank = require('is-blank')
 var isRoot = require('is-css-root')
+var getCssClasses = require('get-css-classes')
+var stripPseudos = require('strip-pseudos')
 
 module.exports = postcss.plugin('postcss-select', function (selectors) {
   return function removePrefixes (root, result) {
@@ -31,6 +33,17 @@ module.exports = postcss.plugin('postcss-select', function (selectors) {
 
 function hasSelector(selectors, potentialMatch) {
   return selectors.some(function (selector) {
-    return potentialMatch === selector
+    return potentialMatch === selector ||
+           containsWithoutPseudos(selector, potentialMatch)
+  })
+}
+
+// If selecting for class .clearfix, .clearfix:after should
+// also match
+function containsWithoutPseudos(selector, potentialMatch) {
+  var classesInPotentialMatch = getCssClasses(potentialMatch).map(stripPseudos)
+
+  return classesInPotentialMatch.some(function (c) {
+    return selector === c
   })
 }
