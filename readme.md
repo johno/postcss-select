@@ -1,4 +1,4 @@
-# postcss-select [![Build Status](https://secure.travis-ci.org/johnotander/postcss-select.png?branch=master)](https://travis-ci.org/johnotander/postcss-select) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+# postcss-select [![Build Status](https://secure.travis-ci.org/johnotander/postcss-select.svg?branch=master)](https://travis-ci.org/johnotander/postcss-select) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 Filter CSS based on a given list of selectors
 
