@@ -1,0 +1,123 @@
+{
+  "name": "johnotander/postcss-select",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.0.27"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Default",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      72,
+      48,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "heading": {
+      "fontFamily": null,
+      "fontStyle": null,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "textTransform": null,
+      "letterSpacing": null,
+      "h0": {},
+      "h1": {},
+      "h2": {},
+      "h3": {},
+      "h4": {},
+      "h5": {},
+      "h6": {}
+    },
+    "alternativeText": {},
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "inverted": "#fff",
+      "primary": "#08e",
+      "secondary": "#0e8",
+      "highlight": "#e08",
+      "border": "#ddd",
+      "muted": "#eee"
+    },
+    "border": {
+      "width": 1,
+      "radius": 2
+    },
+    "link": {},
+    "button": {
+      "hover": {
+        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
+      }
+    },
+    "input": {},
+    "body": {
+      "margin": 0
+    }
+  },
+  "content": [
+    {
+      "component": "nav/AbsoluteNav",
+      "links": [
+        {
+          "href": "https://github.com/johnotander/postcss-select",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/postcss-select",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header/BannerHeader",
+      "heading": "postcss-select",
+      "subhead": "Filter CSS based on a given list of selectors",
+      "links": [
+        {
+          "text": "Tweet",
+          "href": "https://twitter.com/intent/tweet?text=postcss-select%253A%2520Filter%2520CSS%2520based%2520on%2520a%2520given%2520list%2520of%2520selectors&url="
+        }
+      ],
+      "text": "v2.1.0"
+    },
+    {
+      "component": "article/BasicArticle",
+      "text": "\n\n<h2 id=\"installation\">Installation</h2>\n<pre><code class=\"lang-bash\">npm install --save postcss-select\n</code></pre>\n<h2 id=\"usage\">Usage</h2>\n<pre><code class=\"lang-javascript\">var postcss = require(&apos;postcss&apos;)\nvar select = require(&apos;postcss-select&apos;)\n\npostcss([ select([&apos;.foo&apos;, &apos;.bar&apos;]) ]).process(myCss).css\n</code></pre>\n<h4 id=\"input\">Input</h4>\n<pre><code class=\"lang-css\">.foo {\n  color: tomato;\n}\n\n.bar {\n  color: hotpink;\n}\n\n.foo .baz {\n  color: purple;\n}\n\n.baz {\n  color: red;\n}\n</code></pre>\n<h4 id=\"output\">Output</h4>\n<p>After <code>postcss([select([&apos;.foo&apos;, &apos;.bar&apos;])</code></p>\n<pre><code class=\"lang-css\">.foo {\n  color: tomato;\n}\n\n.bar {\n  color: hotpink;\n}\n</code></pre>\n<h2 id=\"license\">License</h2>\n<p>MIT</p>\n<h2 id=\"contributing\">Contributing</h2>\n<ol>\n<li>Fork it</li>\n<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>\n<li>Commit your changes (<code>git commit -am &apos;Add some feature&apos;</code>)</li>\n<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>\n<li>Create new Pull Request</li>\n</ol>\n<p>Crafted with &lt;3 by John Otander (<a href=\"https://twitter.com/4lpine\">@4lpine</a>).</p>\n<hr>\n<blockquote>\n<p>This package was initially generated with <a href=\"http://yeoman.io\">yeoman</a> and the <a href=\"https://github.com/johnotander/generator-p.git\">p generator</a>.</p>\n</blockquote>\n",
+      "html": "\n\n<h2 id=\"installation\">Installation</h2>\n<pre><code class=\"lang-bash\">npm install --save postcss-select\n</code></pre>\n<h2 id=\"usage\">Usage</h2>\n<pre><code class=\"lang-javascript\">var postcss = require(&apos;postcss&apos;)\nvar select = require(&apos;postcss-select&apos;)\n\npostcss([ select([&apos;.foo&apos;, &apos;.bar&apos;]) ]).process(myCss).css\n</code></pre>\n<h4 id=\"input\">Input</h4>\n<pre><code class=\"lang-css\">.foo {\n  color: tomato;\n}\n\n.bar {\n  color: hotpink;\n}\n\n.foo .baz {\n  color: purple;\n}\n\n.baz {\n  color: red;\n}\n</code></pre>\n<h4 id=\"output\">Output</h4>\n<p>After <code>postcss([select([&apos;.foo&apos;, &apos;.bar&apos;])</code></p>\n<pre><code class=\"lang-css\">.foo {\n  color: tomato;\n}\n\n.bar {\n  color: hotpink;\n}\n</code></pre>\n<h2 id=\"license\">License</h2>\n<p>MIT</p>\n<h2 id=\"contributing\">Contributing</h2>\n<ol>\n<li>Fork it</li>\n<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>\n<li>Commit your changes (<code>git commit -am &apos;Add some feature&apos;</code>)</li>\n<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>\n<li>Create new Pull Request</li>\n</ol>\n<p>Crafted with &lt;3 by John Otander (<a href=\"https://twitter.com/4lpine\">@4lpine</a>).</p>\n<hr>\n<blockquote>\n<p>This package was initially generated with <a href=\"http://yeoman.io\">yeoman</a> and the <a href=\"https://github.com/johnotander/generator-p.git\">p generator</a>.</p>\n</blockquote>\n"
+    },
+    {
+      "component": "footer/BasicFooter",
+      "links": [
+        {
+          "href": "https://github.com/johnotander/postcss-select",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/johnotander",
+          "text": "johnotander"
+        }
+      ]
+    }
+  ]
+}
